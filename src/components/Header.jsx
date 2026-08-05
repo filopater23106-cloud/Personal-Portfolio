@@ -7,7 +7,7 @@ import { FaFacebook, FaLinkedin } from "react-icons/fa";
 function Header() {
     const links = [
         "Home",
-        "Skills",
+        "Shills",
         "Projects",
         "Contact",
     ];
@@ -74,7 +74,7 @@ function Header() {
 
             </nav>
             <div
-                className={`${isOpen ? "opacity-100 py-8" : "max-h-0 opacity-0 py-0"} lg:hidden bg-[#111827] border-t border-white/10 w-full mx-auto px-6 py-8 transition-all duration-300 ease-in-out shadow-2xl overflow-hidden`}>
+                className={`${isOpen ? "opacity-100 py-8" : "max-h-0 opacity-0 py-0"} lg:hidden bg-[#111827] border-t border-white/10 w-full mx-auto px-6 transition-all duration-300 ease-in-out shadow-2xl overflow-hidden`}>
                 <ul className="flex flex-col items-center gap-6 w-full">
                     {links.map((link, index) => (
                         <li key={link}>
