@@ -6,12 +6,37 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
+import { useState, useEffect } from "react";
+
+
 function Skills() {
+
+    const [itemsPerPage, setItemsPerPage] = useState(4);
+
+    useEffect(() => {
+
+        const handleResize = () => {
+
+            if (window.innerWidth < 768) {
+                setItemsPerPage(1);
+            } else {
+                setItemsPerPage(4);
+            }
+
+        };
+
+        handleResize();
+
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+
+    }, []);
 
     const pages = [];
 
-    for (let i = 0; i < skills.length; i += 4) {
-        pages.push(skills.slice(i, i + 4));
+    for (let i = 0; i < skills.length; i += itemsPerPage) {
+        pages.push(skills.slice(i, i + itemsPerPage));
     }
 
     return (
@@ -60,7 +85,7 @@ function Skills() {
 
                             <SwiperSlide key={index}>
 
-                                <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-16 gap-x-10 place-items-center px-16 py-5">
+                                <div className="grid grid-cols-1 lg:grid-cols-4 gap-y-16 gap-x-10 place-items-center px-6 lg:px-16 py-5">
 
                                     {page.map((skill) => {
 
