@@ -41,7 +41,7 @@ The project follows a **component-based architecture** and demonstrates reusable
 
 🌐 **Website**
 
-https://Personal-Portfolio.vercel.app/
+https://personal-portfolio-filo6.vercel.app/
 
 ---
 
