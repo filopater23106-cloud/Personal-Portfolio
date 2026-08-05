@@ -120,6 +120,7 @@ Optimized for:
 | JavaScript (ES6+) | Application Logic |
 | Swiper | Skills Slider |
 | React Icons | Icons |
+| CSS3 | Custom Animations |
 
 ---
 
