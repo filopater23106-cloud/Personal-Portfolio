@@ -44,7 +44,7 @@ function Contact() {
                     "
                 >
                     <div className="text-4xl mb-6">
-                        👩‍💻
+                        👨‍💻
                     </div>
 
                     <h3 className="text-2xl font-bold">
