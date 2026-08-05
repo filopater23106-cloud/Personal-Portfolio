@@ -99,7 +99,7 @@ function Header() {
                     </li>
                     <li><p className="text-center text-gray-400 text-sm leading-7 max-w-xs">Crafting beautiful, responsive web applications with modern frontend technologies.</p></li>
                     <li className="w-full">
-                        <a href="#contact" onClick={() => setIsOpen(false)} className="w-full bg-purple-600 hover:bg-purple-500 transition-all duration-300 rounded-full bg-gradient-to-r from-violet-600 to-indigo-500 py-3 font-semibold text-white hover:scale-105 active:scale-95">
+                        <a href="#contact" onClick={() => setIsOpen(false)} className="w-full block text-center bg-purple-600 hover:bg-purple-500 transition-all duration-300 rounded-full bg-gradient-to-r from-violet-600 to-indigo-500 py-3 font-semibold text-white hover:scale-105 active:scale-95">
                             Let's Connect
                         </a>
                     </li>
