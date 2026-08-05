@@ -7,7 +7,7 @@ import { FaFacebook, FaLinkedin } from "react-icons/fa";
 function Header() {
     const links = [
         "Home",
-        "Shills",
+        "Skills",
         "Projects",
         "Contact",
     ];
