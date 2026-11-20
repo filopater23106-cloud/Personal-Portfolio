@@ -3,11 +3,12 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { GoDotFill } from "react-icons/go";
 import { IoLogoGithub, IoLogoInstagram } from "react-icons/io";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import ThemeToggle from "./ThemeToggle";
 
 function Header() {
     const links = [
         "Home",
-        "Shills",
+        "Skills",
         "Projects",
         "Contact",
     ];
@@ -56,6 +57,7 @@ function Header() {
                     <a href="https://github.com/filopater23106-cloud" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-purple-500 hover:bg-purple-500/10 transition-all duration-300">
                         <IoLogoGithub />
                     </a>
+                    <ThemeToggle />
                     <a href="#contact"
                         className="px-7 py-3 rounded-full bg-gradient-to-r from-violet-600 to-indigo-500 text-white font-medium shadow-[0_0_25px_rgba(139,92,246,0.45)] hover:scale-105 transition-all duration-300 ml-5">
                         Let's Connect
@@ -63,14 +65,17 @@ function Header() {
 
                 </div>
 
-                <button
-                    onClick={() => setIsOpen(!isOpen)}
-                    className="lg:hidden text-3xl text-white hover:text-purple-400"
-                >
-                    <span className={`block transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"}`}>
-                        {isOpen ? <FiX /> : <FiMenu />}
-                    </span>
-                </button>
+                <div className="lg:hidden flex items-center gap-3">
+                    <ThemeToggle />
+                    <button
+                        onClick={() => setIsOpen(!isOpen)}
+                        className="lg:hidden text-3xl text-white hover:text-purple-400"
+                    >
+                        <span className={`block transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"}`}>
+                            {isOpen ? <FiX /> : <FiMenu />}
+                        </span>
+                    </button>
+                </div>
 
             </nav>
             <div

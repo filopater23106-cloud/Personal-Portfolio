@@ -20,7 +20,7 @@ function ProjectCard({ project }) {
                         href={project.live}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="rounded-full bg-violet-600 p-4 text-xl transition hover:scale-110 hover:bg-violet-500"
+                        className="rounded-full bg-violet-600 p-4 text-xl text-white transition hover:scale-110 hover:bg-violet-500"
                     >
                         <FiExternalLink />
                     </a>
@@ -29,7 +29,7 @@ function ProjectCard({ project }) {
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="rounded-full border border-white/20 bg-[#111827] p-4 text-xl transition hover:scale-110 hover:border-cyan-400 hover:text-cyan-400"
+                        className="rounded-full border border-white/20 bg-[#111827] p-4 text-xl text-white transition hover:scale-110 hover:border-cyan-400 hover:text-cyan-400"
                     >
                         <FiGithub />
                     </a>

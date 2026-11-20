@@ -9,6 +9,15 @@
 <link rel="icon" href="./src/assets/logo.ico">
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
+  <script>
+    // Apply saved theme before first paint (no flash)
+    try {
+      if (localStorage.getItem("theme") === "light") {
+        document.documentElement.setAttribute("data-theme", "light");
+        document.querySelector('meta[name="theme-color"]').setAttribute("content", "#f4f6fb");
+      }
+    } catch (e) {}
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Portfolio | Filopater</title>
 </head>

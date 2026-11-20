@@ -7,7 +7,7 @@ import {
 
 function CodeCard() {
     return (
-        <div className="relative w-full max-w-xl">
+        <div className="keep-dark relative w-full max-w-xl">
 
             {/* Glow */}
             <div className="absolute inset-0 rounded-3xl bg-violet-600/20 blur-3xl"></div>
