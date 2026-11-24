@@ -60,7 +60,7 @@ This project demonstrates React Hooks, reusable components, responsive layouts, 
 
 # 💻 GitHub Repository
 
-🔗 https://github.com/filopater23106-cloud/YOUR-REPOSITORY
+🔗 https://github.com/filopater23106-cloud/Personal-Portfolio
 
 ---
 
@@ -172,7 +172,7 @@ The website is fully responsive and optimized for:
 
 ## Clone the Repository
 
-git clone https://github.com/filopater23106-cloud/YOUR-REPOSITORY.git
+git clone https://github.com/filopater23106-cloud/Personal-Portfolio.git
 ---
 
 ## Navigate to the Project
